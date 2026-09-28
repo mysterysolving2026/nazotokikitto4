@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ゲームオーバー</title>
+  <style>
+    body {
+      font-family: "MS Gothic", "Hiragino Sans", sans-serif;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .message {
+      font-size: 30px;
+      margin-top: 60px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="message">残念だったね</div>
+  <h1>時間切れだよ あ～あ…信じてたのに… </h1>
+  <h1>なーんてね！びっくりした？？さすがに殺しはしないよ～！ </h1>
+  <h1>まあでも解けなかったことには変わりないからね。さすがに□はあげられないなー、ごめんね</h1>
+
+  <script>
+    localStorage.removeItem("endTime");
+    localStorage.removeItem("bombCleared");
+  </script>
+
+</body>
+</html>
